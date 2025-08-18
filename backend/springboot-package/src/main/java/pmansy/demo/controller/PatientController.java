@@ -5,6 +5,7 @@ import pmansy.demo.repo.PatientRepository;
 import pmansy.demo.domain.Patient;
 import java.util.List;
 
+//@Tag(name = "Patients", description = "Patient data APIs")
 @RestController
 @RequestMapping("/api/patients")
 public class PatientController {
