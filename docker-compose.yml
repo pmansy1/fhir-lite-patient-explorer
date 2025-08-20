@@ -45,8 +45,7 @@ services:
     ports:
       - "${APP_PORT}:8080"
     # Uncomment if you want live code mounts (for dev only)
-    volumes:
-       - ./backend/springboot-package:/app
+
 
 volumes:
   db_data:
