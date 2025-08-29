@@ -2,9 +2,10 @@ package pmansy.demo.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import pmansy.demo.domain.Patient;
-import java.util.List;
+
+import java.util.Optional;
 
 public interface PatientRepository extends JpaRepository<Patient, Long> {
-    List<Patient> findTop25ByLastNameIgnoreCaseStartingWith(String lastNamePrefix);
-    List<Patient> findTop25ByFirstNameIgnoreCaseStartingWith(String firstNamePrefix);
+    Optional<Patient> findByMrn(String mrn);
+    boolean existsByMrn(String mrn);
 }
