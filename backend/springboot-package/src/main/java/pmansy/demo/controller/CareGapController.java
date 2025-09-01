@@ -5,7 +5,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 import pmansy.demo.domain.CareGap;
 import pmansy.demo.exception.NotFoundException;
-import pmansy.demo.repo.CCareGapRepositoryFix;
+import pmansy.demo.repo.CareGapRepository;
 
 @RestController
 @RequestMapping("/api/care-gaps")
